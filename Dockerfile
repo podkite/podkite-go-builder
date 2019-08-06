@@ -4,7 +4,7 @@ ARG TERRAFORM_VERSION=0.11.13
 ARG FLYWAY_VERSION=5.2.4
 
 RUN apk --no-cache add make git zip curl \
-    ansible bash openjdk8 nss
+    ansible bash openjdk8 nss openssh 
 
 RUN go get -u github.com/golang/dep/cmd/dep
 
