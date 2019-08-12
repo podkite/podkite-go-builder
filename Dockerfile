@@ -5,8 +5,10 @@ ARG FLYWAY_VERSION=5.2.4
 
 RUN apk --no-cache add make git zip curl \
     ansible bash openjdk8 nss openssh
-# Install Node
+
+# Install Node and semantic delivery
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/main/ nodejs=8.9.3-r1
+RUN npm install -g @hutson/semantic-delivery-gitlab
 
 RUN go get -u github.com/golang/dep/cmd/dep
 
