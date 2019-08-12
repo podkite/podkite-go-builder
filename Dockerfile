@@ -4,7 +4,9 @@ ARG TERRAFORM_VERSION=0.11.13
 ARG FLYWAY_VERSION=5.2.4
 
 RUN apk --no-cache add make git zip curl \
-    ansible bash openjdk8 nss openssh 
+    ansible bash openjdk8 nss openssh
+# Install Node
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/main/ nodejs=8.9.3-r1
 
 RUN go get -u github.com/golang/dep/cmd/dep
 
