@@ -6,4 +6,4 @@ This image is based on alpine and contains:
 - Terraform 0.11.13
 - Ansible 2.5.5
 - Flyway 5.2.4
-- Node.js
+- Node.js and semantic-delivery
