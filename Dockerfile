@@ -1,6 +1,6 @@
 FROM golang:1.10.3-alpine
 
-ARG TERRAFORM_VERSION=0.11.13
+ARG TERRAFORM_VERSION=0.12.7
 ARG FLYWAY_VERSION=5.2.4
 
 RUN apk --no-cache add make git zip curl \
